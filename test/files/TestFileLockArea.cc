@@ -6,5 +6,3 @@
 int main(){
     lock_file_area();
 }
-
-int abc(){}

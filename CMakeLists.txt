@@ -33,7 +33,7 @@ endfunction()
 #项目的所有目录都为头文件搜索路径
 include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/src)
 include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/test)
-include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/bazel-tm/external/com_google_googletest)
+include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/bazel-c_plus_tm/external/com_google_googletest)
 
 #添加库文件搜索路径
 link_directories(

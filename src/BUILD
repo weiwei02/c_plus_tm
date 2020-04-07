@@ -4,13 +4,6 @@ cc_library(
     srcs = glob(["cxx/source/*.cc",
                  "cxx/source/*.cpp",]),
     hdrs = glob(["cxx/include/*.h"]),
-#    hdrs = ["cxx/include/AcctAbc.h",
-#            "cxx/include/base.h",
-#            "cxx/include/Dma.h",
-#            "cxx/include/stock10.h",
-#            "cxx/Include/Tv.h",
-#            "cxx/Include/Stdmove.h"
-#            ],
     includes = ["cxx"]
 )
 
