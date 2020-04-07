@@ -1,11 +1,12 @@
-cmake_minimum_required (VERSION 2.8.4)
-set(CMAKE_BUILD_TYPE Debug)
-project (acm-algrithm)
+cmake_minimum_required(VERSION 3.15)
 
+set(CMAKE_BUILD_TYPE "Debug")
+project(c_plus_tm)
+
+#set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_STANDARD 11)
 #ADD_SUBDIRECTORY(src bin)
-
-#SET(CMAKE_INSTALL_PREFIX ${PROJECT_BINARY_DIR})
-#SET(CMAKE_INSTALL_PREFIX /usr/local)
 #设置库文件存放路径
 #设置安装目录
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/install)
@@ -31,13 +32,13 @@ endfunction()
 
 #项目的所有目录都为头文件搜索路径
 include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/src)
+include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/test)
+include_sub_directories_recursively(${PROJECT_SOURCE_DIR}/bazel-tm/external/com_google_googletest)
 
 #添加库文件搜索路径
 link_directories(
         ${PROJECT_SOURCE_DIR}/build/lib
 )
-
-#添加子目录
 add_subdirectory(src)
+add_subdirectory(bazel-tm/external/com_google_googletest)
 add_subdirectory(test)
-

@@ -1,0 +1,8 @@
+/cmake-build-debug/
+/build/
+/install/
+/bazel-testlogs/
+/bazel-out/
+/bazel-c_plus_tm/
+/.clwb/
+/bazel-bin/
