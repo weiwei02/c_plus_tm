@@ -14,6 +14,15 @@ cc_library(
     includes = ["cxx"]
 )
 
+# 内核文件接口
+cc_library(
+    name = "files-lib",
+    srcs = glob(["files/source/*.cc",
+                 "files/source/*.c",]),
+    hdrs = glob(["files/include/*.h"]),
+    includes = ["files/include"]
+)
+
 cc_library(
     name = "ipc-lib",
     srcs = glob(["ipc/source/*.cc",]),

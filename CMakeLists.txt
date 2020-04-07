@@ -40,5 +40,5 @@ link_directories(
         ${PROJECT_SOURCE_DIR}/build/lib
 )
 add_subdirectory(src)
-add_subdirectory(bazel-tm/external/com_google_googletest)
+add_subdirectory(bazel-c_plus_tm/external/com_google_googletest)
 add_subdirectory(test)
