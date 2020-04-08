@@ -1,7 +1,6 @@
 // wait 函数使用
 // Created by wangww on 2020/3/21.
 //
-#include <process/process.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

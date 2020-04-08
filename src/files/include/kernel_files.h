@@ -46,6 +46,16 @@ F_SETLKW命令与上面介绍的F_SETLK命令作用相同，但在无法获取�
 
  程序对某个文件拥有的所有锁都将在相应的文件描述符被关闭时自动清除。在程序结束时也会自动清除各种锁.
 
+ unistd.h 还提供了 lockf 函数，其原型如下：
+  int flock(int filded,int function, off_t size_to_lock)
+
+ function参数的取值如下所示。
+□　F_ULOCK:解锁。
+□　F_LOCK:设置独占锁。
+□　F_TLOCK:测试并设置独占锁。
+□　F_TEST:测试其他进程设置的锁。
+size_to_lock参数是操作的字节数，它从文件的当前偏移值开始计算。
+
 摘录来自: 马修(Neil Matthew). “Linux程序设计(第4版) (图灵程序设计丛书•Linux/UNIX系列)。” Apple Books.
  * */
 int lock_file_area();

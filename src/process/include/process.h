@@ -99,3 +99,21 @@ void tvfork();
  * 2. WUNTRACED : 该参数表示若发现子进程处于僵尸状态，但未报告状态，则立即返回。
  * */
  void twait();
+
+
+ /**
+  * “sigaction结构定义在文件signal.h中，它的作用是定义在接收到参数sig指定的信号后应该采取的行动。”
+
+“sigaction函数设置与信号sig关联的动作。如果oact不是空指针，sigaction将把原先对该信号的动作写到它指向的位置。
+  如果act是空指针，则sigaction函数就不需要再做其他设置了，否则将在该参数中设置对指定信号的动作。”
+
+“在参数act指向的sigaction结构中，sa_handler是一个函数指针，它指向接收到信号sig时将被调用的信号处理函数。
+  它相当于前面见到的传递给函数signal的参数func。我们可以将sa_handler字段设置为特殊值SIG_IGN和SIG_DFL，
+  它们分别表示信号将被忽略或把对该信号的处理方式恢复为默认动作。
+sa_mask成员指定了一个信号集，在调用sa_handler所指向的信号处理函数之前，该信号集将被加入到进程的信号屏蔽字中。
+  这是一组将被阻塞且不会传递给该进程的信号。设置信号屏蔽字可以防止前面看到的信号在它的处理函数还未运行结束时就被接收到的情况。
+  使用sa_mask字段可以消除这一竞态条件。”
+
+摘录来自: 马修(Neil Matthew). “Linux程序设计(第4版) (图灵程序设计丛书•Linux/UNIX系列)。” Apple Books.
+  * */
+ void signalAction();

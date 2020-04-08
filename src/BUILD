@@ -16,6 +16,15 @@ cc_library(
     includes = ["files/include"]
 )
 
+# 内核进程管理接口
+cc_library(
+    name = "process-lib",
+    srcs = glob(["process/*.cc",
+                 "process/*.c",]),
+    hdrs = glob(["process/include/*.h"]),
+    includes = ["process/include"]
+)
+
 cc_library(
     name = "ipc-lib",
     srcs = glob(["ipc/source/*.cc",]),

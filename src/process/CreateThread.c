@@ -6,7 +6,6 @@
 #include <zconf.h>
 #include <string.h>
 #include <stdlib.h>
-#include <process/threads.h>
 
 char message[] = "Hello Pthread";
 void *thread_function(void *args){
