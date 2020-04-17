@@ -98,5 +98,11 @@ semctl函数中的command参数可以设置许多不同的值，但只有下面�
 semctl函数将根据command参数的不同而返回不同的值。对于SETVAL和IPC_RMID，成功时返回0，失败时返回-1。
  * 
 */
-int t_sigpv();
+
+
+/**
+ * mode 工作模式
+ * 如果 mode 大于1，代表主进程，
+*/
+int t_sigpv(int mode);
 #endif //TM_SYSV_H
