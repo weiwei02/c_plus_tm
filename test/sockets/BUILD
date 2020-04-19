@@ -9,3 +9,12 @@ cc_binary(
         "//src:sockets-lib"
     ]
 )
+
+cc_binary(
+    name = "select_stdin_test",
+    srcs = ["TestSelectStdIn.cc"],
+    # copts = [],
+    deps = [
+        "//src:sockets-lib"
+    ]
+)

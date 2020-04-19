@@ -5,6 +5,9 @@ int tcp_server(int port);
 int tcp_client(int port);
 
 /**
+ * int      select(int, fd_set * read_fds, fd_set * write_fds,
+    fd_set * error_fds, struct timeval * timeout)
+    
  * select调用用于测试文件描述符集合中，是否有一个文件描述符已处于可读状态或可写状态或错误状态，它将阻塞以等待某个文件描述符进入上述这些状态。
 参数nfds指定需要测试的文件描述符数目，测试的描述符范围从0到nfds-1。3个描述符集合都可以被设为空指针，这表示不执行相应的测试。
 select函数会在发生以下情况时返回：readfds集合中有描述符可读、writefds集合中有描述符可写或errorfds集合中有描述符遇到错误条件。
@@ -18,4 +21,5 @@ elect调用返回状态发生变化的描述符总数。失败时它将返回-1�
 （因中断而返回）、EINVAL（nfds或timeout取值错误）。
 
 */
+int select_from_stdin();
 #endif
