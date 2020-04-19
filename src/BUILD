@@ -46,3 +46,13 @@ cc_library(
             ],
     includes = ["threadpool"]
 )
+
+# socket 通信
+cc_library(
+    name = "sockets-lib",
+    srcs = glob(["sockets/source/*.cc",]),
+    hdrs = [
+        "sockets/include/sockets.h",
+        ],
+    includes = ["sockets"]
+)
