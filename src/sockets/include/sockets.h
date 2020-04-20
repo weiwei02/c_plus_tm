@@ -7,7 +7,7 @@ int tcp_client(int port);
 /**
  * int      select(int, fd_set * read_fds, fd_set * write_fds,
     fd_set * error_fds, struct timeval * timeout)
-    
+
  * select调用用于测试文件描述符集合中，是否有一个文件描述符已处于可读状态或可写状态或错误状态，它将阻塞以等待某个文件描述符进入上述这些状态。
 参数nfds指定需要测试的文件描述符数目，测试的描述符范围从0到nfds-1。3个描述符集合都可以被设为空指针，这表示不执行相应的测试。
 select函数会在发生以下情况时返回：readfds集合中有描述符可读、writefds集合中有描述符可写或errorfds集合中有描述符遇到错误条件。
@@ -16,10 +16,34 @@ select函数会在发生以下情况时返回：readfds集合中有描述符可�
 述符进行测试，来找出需要注意的描述符。
 你可以修改timeout值来表明剩余的超时时间，但这并不是在X/Open规范中定义的行为。如果select是因为超时而返回的话，所有描述符集合都
 将被清空。
-s
-elect调用返回状态发生变化的描述符总数。失败时它将返回-1并设置errno来描述错误。可能出现的错误有：EBADF（无效的描述符）、EINTR
+select调用返回状态发生变化的描述符总数。失败时它将返回-1并设置errno来描述错误。可能出现的错误有：EBADF（无效的描述符）、EINTR
 （因中断而返回）、EINVAL（nfds或timeout取值错误）。
 
 */
 int select_from_stdin();
+
+/**
+ * poll() 执行的任务和select()很相似，两者之间的主要区别是如何制定待检查的文件描述符。器函数原型如下：
+ * 
+ * #include <poll.h>
+ * int poll(struct pollfd fds[], nfds_t nfds, int timeout)
+ * 
+ * 返回已经准备完毕的文件描述符数。超时返回0，错误返回 -1
+ * 参数 fds列出了需要poll来检查的文件描述符。其定义如下：
+ * struct pollfd{
+ *  int fd;
+ *  // Requested events bit mask
+ *  short events;
+ *  // Returned events bit mask
+ *  shot revents;
+ * }
+ * 
+ * 参数nfds 指定了 fds的元素个数。数据类型 nfds_t 实际为无符号整形
+ * 
+ * timeout 参数决定了poll的阻塞行为：
+ * -1： 一直阻塞
+ * 0：不会阻塞，只检查一次
+ * >0 : 至多阻塞 n 毫秒。
+*/
+int poll_pipes(int pipes_num,int wirte_num);
 #endif
