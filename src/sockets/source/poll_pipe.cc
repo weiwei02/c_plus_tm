@@ -30,7 +30,8 @@ int poll_pipes(int pipes_num,int wirte_num){
     }
     // 所有管道的文件描述符，0读1写
     int (*pfds)[2] = (int (*) [2])pfds_;
-    // 创建接口声明数量的管道
+
+    cout << "创建接口声明数量的管道 \n";
     for (int i = 0; i < pipes_num; i++)
     {
         if (pipe(pfds[i]) == -1)
@@ -40,20 +41,20 @@ int poll_pipes(int pipes_num,int wirte_num){
         }
     }
 
-    // 执行向指定数量随机选择的管道中写数据
+    cout << "执行向指定数量随机选择的管道中写数据\n";
     srandom((int)time(NULL));
     for (int i = 0; i < wirte_num; i++)
     {
         int rand_pipe = random() % wirte_num;
-        cout << "write to fd " << rand_pipe << " ";
+        cout << "write to fd " << rand_pipe << " " << pfds[rand_pipe][1] << " \n";
         if (write(pfds[rand_pipe][1], "abc", 3) == -1)
         {
-            cerr << "write to " << pfds[rand_pipe][1] << " error\n";
+            cerr << "write to " << rand_pipe << " " << pfds[rand_pipe][1] << " error\n";
         }
     }
 
-    // 构造poll函数所需的文件描述符
-    for (int j = pipes_num; j < pipes_num; j++)
+    cout << "构造poll函数所需的文件描述符\n";
+    for (int j = 0; j < pipes_num; j++)
     {
         poll_fds[j].fd = pfds[j][0];
         poll_fds[j].events = POLL_IN;
@@ -66,12 +67,12 @@ int poll_pipes(int pipes_num,int wirte_num){
     }
     cout << "poll() return " << ready << " \n";
 
-    // 检查每个管道是否有可用消息到达
-    for (int k = pipes_num; k < pipes_num; k++)
+    cout << "检查每个管道是否有可用消息到达\n";
+    for (int k = 0; k < pipes_num; k++)
     {
         if (poll_fds[k].revents & POLL_IN)
         {
-            cout << "readable " << k << " " << poll_fds[k].fd;
+            cout << "readable " << k << " " << poll_fds[k].fd << endl;
         }
         
     }

@@ -18,3 +18,13 @@ cc_binary(
         "//src:sockets-lib"
     ]
 )
+
+# 测试poll函数
+cc_binary(
+    name = "poll_pipe_test",
+    srcs = ["TestPollPipe.cc"],
+    # copts = [],
+    deps = [
+        "//src:sockets-lib"
+    ]
+)
