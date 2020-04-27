@@ -69,4 +69,4 @@ libevent 也可以监测 POSIX 风格的信号。要构造信号处理器,使用
 除了提供一个信号编号代替文件描述符之外,各个参数与 event_new()相同。
 */
 int simple_server(int port);
-int simple_client(int port);
+int simple_client(char* , int port);
