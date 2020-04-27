@@ -53,6 +53,7 @@ cc_library(
     srcs = glob(["sockets/source/*.cc",]),
     hdrs = [
         "sockets/include/sockets.h",
+        "sockets/include/libev.h",
         ],
     includes = ["sockets"]
 )
