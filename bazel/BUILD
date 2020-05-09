@@ -34,6 +34,7 @@
 #         ],
 #     }),
 # )
+package(default_visibility = ["//visibility:public"])
 
 load("@rules_foreign_cc//tools/build_defs:configure.bzl", "configure_make")
 load("@rules_foreign_cc//tools/build_defs:cmake.bzl", "cmake_external")

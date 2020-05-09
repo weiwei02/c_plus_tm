@@ -6,14 +6,14 @@
 #include <unistd.h>
 
 
-#include "include/event.h"
+#include "event.h"
 
 using namespace std;
 
 int tcp_connect_server(const char*, int);
 
 void cmd_msg_cb(int, short, void*);
-void socket_read_cb(int, short, void*);
+void client_socket_read_cb(int, short, void*);
 
 // 客户端
 int simple_client(char* ip, int port){
@@ -26,7 +26,7 @@ int simple_client(char* ip, int port){
 
     cout << "connect to server successful " << endl;    
     struct event_base *base = event_base_new();
-    struct event *ev_sockfd = event_new(base, sockfd, EV_READ | EV_PERSIST, socket_read_cb, NULL);
+    struct event *ev_sockfd = event_new(base, sockfd, EV_READ | EV_PERSIST, client_socket_read_cb, NULL);
     event_add(ev_sockfd, NULL);
     
     struct event* ev_cmd = event_new(base, STDIN_FILENO, EV_READ | EV_PERSIST, cmd_msg_cb, (void*)&sockfd);
@@ -53,7 +53,7 @@ void cmd_msg_cb(int fd, short events, void *arg){
     write(sockfd, msg, ret);
 }
 
-void socket_read_cb(int fd, short events, void *arg){
+void client_socket_read_cb(int fd, short events, void *arg){
     char msg[1024];
 
     int len = read(fd, msg, sizeof(msg) - 1);

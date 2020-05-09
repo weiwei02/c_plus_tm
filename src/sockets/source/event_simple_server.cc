@@ -5,12 +5,12 @@
 #include <errno.h>
 #include <unistd.h>
 
-#include "include/event.h"
+#include "event.h"
 
 using namespace std;
 int tcp_server_init(int);
 void accept_cb(evutil_socket_t, short, void *);
-void socket_read_cb(evutil_socket_t, short, void *);
+void server_socket_read_cb(evutil_socket_t, short, void *);
 
 int simple_server(int port){
     int lfd = tcp_server_init(port);
@@ -68,7 +68,7 @@ void accept_cb(evutil_socket_t l_fd, short, void * arg){
 
     struct event_base *base = (event_base *) arg;
     struct event *ev = event_new(NULL, -1, 0, NULL, NULL);
-    event_assign(ev, base, l_fd, EV_READ | EV_PERSIST, socket_read_cb, (void*) ev);
+    event_assign(ev, base, l_fd, EV_READ | EV_PERSIST, server_socket_read_cb, (void*) ev);
 
     event_add(ev, NULL);
 }
@@ -77,7 +77,7 @@ void accept_cb(evutil_socket_t l_fd, short, void * arg){
 /**
  * 读socket处理函数
 */
-void socket_read_cb(evutil_socket_t fd, short, void * arg){
+void server_socket_read_cb(evutil_socket_t fd, short, void * arg){
     char msg[4096];
     struct event *ev = (struct event*)arg;
     int len = read(fd, msg, sizeof(msg) - 1);

@@ -55,5 +55,8 @@ cc_library(
         "sockets/include/sockets.h",
         "sockets/include/libev.h",
         ],
-    includes = ["sockets"]
+    includes = ["sockets"],
+    deps = [
+        "//bazel:libevent"
+    ]
 )

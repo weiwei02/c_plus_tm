@@ -28,3 +28,13 @@ cc_binary(
         "//src:sockets-lib"
     ]
 )
+
+# 测试libevent函数
+cc_binary(
+    name = "simple_event_test",
+    srcs = ["event_simple_test.cc"],
+    # copts = [],
+    deps = [
+        "//src:sockets-lib"
+    ]
+)
