@@ -122,3 +122,4 @@ evconnlistener 机制提供了监听和接受 TCP 连接的方法。
 */
 int buffer_server(int port);
 int buffer_client(int port);
+int buffer_event_listener(int port);
