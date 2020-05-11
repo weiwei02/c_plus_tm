@@ -38,3 +38,12 @@ cc_binary(
         "//src:sockets-lib"
     ]
 )
+# 测试libevent buffer 函数
+cc_binary(
+    name = "event_buffer_test",
+    srcs = ["event_buffer_test.cc"],
+    # copts = [],
+    deps = [
+        "//src:sockets-lib"
+    ]
+)
