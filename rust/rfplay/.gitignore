@@ -1,3 +1,11 @@
 /target
+.DS_Store
 .idea
 .vscode
+src/enum
+src/error
+src/structs
+src/owner
+src/data_types
+src/main2
+src/concurrency
