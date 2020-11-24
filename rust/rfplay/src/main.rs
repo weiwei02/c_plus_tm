@@ -1,3 +1,4 @@
+mod test_double;
 fn main() {
     let a = 12;
     let a = a + 1;
