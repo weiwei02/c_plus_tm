@@ -1,4 +1,9 @@
 mod test_double;
+mod channel;
+mod mutex;
+mod http_server;
+mod async_file;
+
 fn main() {
     let a = 12;
     let a = a + 1;
