@@ -43,7 +43,7 @@ func TestQuickSort(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			QuickSort(tt.args.src, tt.args.low, tt.args.high)
-			println(tt.args.src)
+			// println(tt.args.src)
 			t.Log(tt.args.src)
 			// t.Logf("print %d", tt.args.src)
 			// t.Error(tt.args.src)
