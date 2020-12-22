@@ -27,13 +27,24 @@ func MergeSortRecursive(src, dst []int, start, end int){
 	MergeSortRecursive(src, dst, start2, end2)
 	k := start
 	for start1 <= end1 && start2 <= end2 {
-		dst[k++] = src[start1] < src[start2] ? arr[start1++] : arr[start2++]
+		if src[start1] < src[start2] {
+			dst[k] = src[start1]
+			start1++
+		}else{
+			dst[k] = src[start2]
+			start2++
+		}
+		k++
 	}
 	for start1 <= end1 {
-		dst[k++] = src[start1++]
+		dst[k] = src[start1]
+		k++
+		start1++
 	}
 	for start2 <= end2 {
-		dst[k++] = src[start2++]
+		dst[k] = src[start2]
+		k++
+		start2++
 	}
 	for k := start; k <= end; k++ {
 		src[k] = dst[k]
@@ -42,6 +53,6 @@ func MergeSortRecursive(src, dst []int, start, end int){
 
 func MergeSort(src []int) []int{
 	dst := make([]int, len(src))
-	MergeSortRecursive(src, dst,0 len(src) - 1)
+	MergeSortRecursive(src, dst,0, len(src) - 1)
 	return dst
 }
