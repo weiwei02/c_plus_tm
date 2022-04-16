@@ -24,6 +24,6 @@ func longest_no_repeat_child_string(str string) int {
 	// 最长子串长度
 	maxLen := 0
 	for i := 0; i < len(str); i++ {
-		asii := strconv.
+
 	}
 }
