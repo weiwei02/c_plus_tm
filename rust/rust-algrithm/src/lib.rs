@@ -3,6 +3,8 @@ mod dp;
 mod graph;
 mod tree;
 mod greedy;
+mod search;
+mod stack;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
