@@ -32,7 +32,7 @@ return 36 (10 = 3 + 3 + 4)
 
 继续拆成更大的绳子可以发现都比拆成 2 和 3 的效果更差，因此我们只考虑将绳子拆成 2 和 3，并且优先拆成 3，当拆到绳子长度 n 等于 4 时，也就是出现 3+1，此时只能拆成 2+2。
 */
-func integerBreak(n int) int{
+func integerBreak(n int) int {
 	if n < 2 {
 		return 0
 	}
@@ -43,9 +43,9 @@ func integerBreak(n int) int{
 		return 2
 	}
 	timeOf3 := n / 3
-	if n - timeOf3 * 3 == 1{
+	if n-timeOf3*3 == 1 {
 		timeOf3--
 	}
 	timeOf2 := (n - timeOf3) / 2
-	return int(math.Pow(3,float64(timeOf3)) * math.Pow(2, float64(timeOf2)))
+	return int(math.Pow(3, float64(timeOf3)) * math.Pow(2, float64(timeOf2)))
 }

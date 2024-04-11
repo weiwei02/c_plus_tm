@@ -12,18 +12,18 @@ package dynamic
 2. 当前子串长度应该是j-i，即 [i +1, j]是当前的子串。
 
 */
-
-func longest_no_repeat_child_string(str string) int {
-	array := make([]int, 26)
-	for i := 0; i < len(array); i++ {
-		array[i] = -1
-	}
-
-	// 当前子串长度
-	curLen := 0
-	// 最长子串长度
-	maxLen := 0
-	for i := 0; i < len(str); i++ {
-
-	}
-}
+//
+//func longest_no_repeat_child_string(str string) int {
+//	array := make([]int, 26)
+//	for i := 0; i < len(array); i++ {
+//		array[i] = -1
+//	}
+//
+//	// 当前子串长度
+//	curLen := 0
+//	// 最长子串长度
+//	maxLen := 0
+//	for i := 0; i < len(str); i++ {
+//
+//	}
+//}

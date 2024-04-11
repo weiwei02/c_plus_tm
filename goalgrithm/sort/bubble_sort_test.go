@@ -19,11 +19,10 @@ func TestBubbleSort(t *testing.T) {
 	}
 }
 
-
 func TestQuickSort(t *testing.T) {
 	type args struct {
-		src []int
-		low int 
+		src  []int
+		low  int
 		high int
 	}
 	tests := []struct {
@@ -33,11 +32,10 @@ func TestQuickSort(t *testing.T) {
 		{
 			name: "test1",
 			args: args{
-				[]int{4,6,100,28,1,0,11,2,53,12,4,21,12321,4,31,12,31,231,23,2,65,6,7,8,5,4,6,97,55},
+				[]int{4, 6, 100, 28, 1, 0, 11, 2, 53, 12, 4, 21, 12321, 4, 31, 12, 31, 231, 23, 2, 65, 6, 7, 8, 5, 4, 6, 97, 55},
 				0,
 				28,
 			},
-
 		},
 	}
 	for _, tt := range tests {
@@ -47,7 +45,7 @@ func TestQuickSort(t *testing.T) {
 			t.Log(tt.args.src)
 			// t.Logf("print %d", tt.args.src)
 			// t.Error(tt.args.src)
-			
+
 		})
 	}
 }

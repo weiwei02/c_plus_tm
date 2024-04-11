@@ -54,4 +54,5 @@ false
  */
 func match(str string, pattern string) bool {
 	// write code here
+	return false
 }

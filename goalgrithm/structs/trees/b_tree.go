@@ -45,11 +45,11 @@ func btree() {
 	tree.Size()  // 0
 
 	// Other:
-	tree.Height() // gets the height of the tree
-	tree.Left() // gets the left-most (min) node
-	tree.LeftKey() // get the left-most (min) node's key
-	tree.LeftValue() // get the left-most (min) node's value
-	tree.Right() // get the right-most (max) node
-	tree.RightKey() // get the right-most (max) node's key
+	tree.Height()     // gets the height of the tree
+	tree.Left()       // gets the left-most (min) node
+	tree.LeftKey()    // get the left-most (min) node's key
+	tree.LeftValue()  // get the left-most (min) node's value
+	tree.Right()      // get the right-most (max) node
+	tree.RightKey()   // get the right-most (max) node's key
 	tree.RightValue() // get the right-most (max) node's value
 }

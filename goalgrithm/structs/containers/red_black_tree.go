@@ -1,11 +1,11 @@
 package containers
+
 import (
 	"fmt"
 	rbt "github.com/emirpasic/gods/trees/redblacktree"
 )
 
-
-func rb_tree(){
+func rb_tree() {
 	tree := rbt.NewWithIntComparator() // empty (keys are of type int)
 
 	tree.Put(1, "x") // 1->x
@@ -44,8 +44,8 @@ func rb_tree(){
 	tree.Size()  // 0
 
 	// Other:
-	tree.Left() // gets the left-most (min) node
-	tree.Right() // get the right-most (max) node
-	tree.Floor(1) // get the floor node
+	tree.Left()     // gets the left-most (min) node
+	tree.Right()    // get the right-most (max) node
+	tree.Floor(1)   // get the floor node
 	tree.Ceiling(1) // get the ceiling node
 }

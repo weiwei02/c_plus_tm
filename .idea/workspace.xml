@@ -13,7 +13,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8130997e-2ec0-4ded-8e1d-841a4dca4abb" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/goalgrithm/alstring/string_mutiply.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/alstring/string_mutiply_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dsf/nQueen.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dynamic/get_longest_palindrome.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dynamic/longestValidParentheses.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dynamic/longestValidParentheses_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/sort/get_leaset_numbers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/tree/serialize_tree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/tree/serialize_tree_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/not_repeat_child_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/not_repeat_child_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/partten_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/partten_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/rectangular_overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/rectangular_overlay.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/sum_the_sequence_arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/sum_the_sequence_arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/greedy/cut_rope.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/greedy/cut_rope.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/counting_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/counting_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/heap_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/heap_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/merge_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/merge_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/quick_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/selectction_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/selectction_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/topk_frenkency.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/topk_frenkency.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/array_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/array_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/doubly_linked_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/doubly_linked_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/hash_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/hash_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/red_black_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/red_black_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/trees/avl_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/trees/avl_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/trees/b_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/trees/b_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/trees/red_black_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/trees/red_black_tree.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +78,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/goalgrithm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../extern/github.com/linux" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -59,9 +88,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -78,6 +107,7 @@
       <workItem from="1640971154202" duration="575000" />
       <workItem from="1640971766728" duration="1713000" />
       <workItem from="1650042070614" duration="233000" />
+      <workItem from="1657635523002" duration="1149000" />
     </task>
     <servers />
   </component>

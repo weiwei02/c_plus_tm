@@ -1,9 +1,10 @@
 package containers
+
 import (
 	"github.com/emirpasic/gods/maps/hashmap"
 )
 
-func mapping(){
+func mapping() {
 	m := hashmap.New() // empty
 	m.Put(1, "x")      // 1->x
 	m.Put(2, "b")      // 2->b, 1->x (random order)

@@ -38,48 +38,48 @@ package dynamic
 最优子结构为：
 result[n] = max(0, n + result[n-1])
 */
-
-func sumOfArrayn(arrays int[]) int {
-	result := make([]int, len(arrays))
-	biggest := 0
-	for i := 0; i < len(arrays); i++ {
-		if i == 0 {
-			if arrays[i] > 0 {
-				result[i] = arrays[i]
-			}
-			continue
-		}
-		if arrays[i]+result[i-1] > 0 {
-			result[i] = arrays[i] + result[i-1]
-		}
-		if result[i] > biggest {
-			biggest = result[i]
-		}
-	}
-	return biggest
-}
-
-/**
-二 如果空间复杂度为O（1）
-设最大和为biggest，当前和为sum
-1. 如果a+b<0 则 a+b = 0
-2. 如果a+b > biggest，则biggest = a + b
-3. 如果a+b >0 则贪心的认为继续向下加遇见正数时得到的和，一定比正数本身更大
-
-警告： 数组可能全为负数
-*/
-func sumOfArray1(arrays int[]) int {
-	biggest := arrays[0]
-	sum := arrays[0]
-	for i := 1; i < len(arrays); i++ {
-		if sum > 0 && sum+arrays[i] > 0 {
-			sum = sum + arrays[i]
-		} else {
-			sum = arrays[i]
-		}
-		if sum > biggest {
-			biggest = sum
-		}
-	}
-	return biggest
-}
+//
+//func sumOfArrayn(arrays int[]) int {
+//	result := make([]int, len(arrays))
+//	biggest := 0
+//	for i := 0; i < len(arrays); i++ {
+//		if i == 0 {
+//			if arrays[i] > 0 {
+//				result[i] = arrays[i]
+//			}
+//			continue
+//		}
+//		if arrays[i]+result[i-1] > 0 {
+//			result[i] = arrays[i] + result[i-1]
+//		}
+//		if result[i] > biggest {
+//			biggest = result[i]
+//		}
+//	}
+//	return biggest
+//}
+//
+///**
+//二 如果空间复杂度为O（1）
+//设最大和为biggest，当前和为sum
+//1. 如果a+b<0 则 a+b = 0
+//2. 如果a+b > biggest，则biggest = a + b
+//3. 如果a+b >0 则贪心的认为继续向下加遇见正数时得到的和，一定比正数本身更大
+//
+//警告： 数组可能全为负数
+//*/
+//func sumOfArray1(arrays int[]) int {
+//	biggest := arrays[0]
+//	sum := arrays[0]
+//	for i := 1; i < len(arrays); i++ {
+//		if sum > 0 && sum+arrays[i] > 0 {
+//			sum = sum + arrays[i]
+//		} else {
+//			sum = arrays[i]
+//		}
+//		if sum > biggest {
+//			biggest = sum
+//		}
+//	}
+//	return biggest
+//}
