@@ -48,34 +48,16 @@ mod tests {
 struct Solution;
 impl Solution {
     pub fn find_gcd(nums: Vec<i32>) -> i32 {
-        let mut min = nums[0];
-        let mut max = nums[0];
-        for num in &nums {
-            if *num < min {
-                min = *num;
+        fn gcd(mut a: i32, mut b: i32) -> i32 {
+            while b != 0 {
+                (a, b) = (b, a % b)
             }
-            if *num > max {
-                max = *num;
-            }
+            a
         }
-        Solution::gcd(min, max)
-    }
-
-    fn gcd(a: i32, b: i32) -> i32 {
-        if a == 0 {
-            return 0;
-        } else if a == 1 || b == 1 {
-            return 1;
-        }
-
-        let mut old = a;
-        let mut next = b;
-        while 0 != next {
-            let tmp = next;
-            next = old % next;
-            old = tmp;
-
-        }
-        old
+        let (max, min) = nums
+            .into_iter()
+            .fold((0, 1000), |(max, min), v| (max.max(v), min.min(v)));
+            
+        gcd(max, min)
     }
 }
