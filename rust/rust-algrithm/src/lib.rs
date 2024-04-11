@@ -5,6 +5,7 @@ mod tree;
 mod greedy;
 mod search;
 mod stack;
+mod math;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
