@@ -31,7 +31,8 @@ func two_dismensional(lattices [][]int) int {
 			}
 		}
 	}
-	return dp[rows - 1][columns - 1]
+
+	return dp[rows-1][columns-1]
 }
 
 func max(a, b int) int {

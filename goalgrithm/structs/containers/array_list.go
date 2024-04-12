@@ -4,6 +4,7 @@ import (
 	"github.com/emirpasic/gods/lists/arraylist"
 	"github.com/emirpasic/gods/utils"
 )
+
 /**
  * type List interface {
 	Get(index int) (interface{}, bool)
@@ -22,7 +23,7 @@ import (
 	// Values() []interface{}
 }
 */
-func operateList(){
+func operateList() {
 	list := arraylist.New()
 	list.Add("a")                         // ["a"]
 	list.Add("c", "b")                    // ["a","c","b"]

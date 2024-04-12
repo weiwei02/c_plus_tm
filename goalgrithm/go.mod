@@ -1,7 +1,5 @@
-module github.com/weiwei02/c_plus_tm/goalgtithm
+module goalgrithm
 
-go 1.14
+go 1.18
 
-require github.com/emirpasic/gods v1.12.0
-
-// replace()
+require github.com/emirpasic/gods v1.18.0

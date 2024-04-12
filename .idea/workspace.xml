@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="c_plus_tm" targetName="t_realloc" />
-      <config projectName="c_plus_tm" targetName="t_createThread" />
-      <config projectName="c_plus_tm" targetName="t_memset" />
-      <config projectName="c_plus_tm" targetName="t_wait" />
-      <config projectName="c_plus_tm" targetName="t_ptrstr" />
-      <config projectName="c_plus_tm" targetName="t_usedma" />
-      <config projectName="c_plus_tm" targetName="helloWorld" />
-      <config projectName="c_plus_tm" targetName="t_thread_semaphore" />
-      <config projectName="c_plus_tm" targetName="gtest" />
-      <config projectName="c_plus_tm" targetName="t_thread_std" />
-      <config projectName="c_plus_tm" targetName="c_plus_tm_lib_static" />
-      <config projectName="c_plus_tm" targetName="t_accabc" />
-      <config projectName="c_plus_tm" targetName="gtest_main" />
-      <config projectName="c_plus_tm" targetName="t_thread_detach" />
-      <config projectName="c_plus_tm" targetName="gmock" />
-      <config projectName="c_plus_tm" targetName="c_plus_tm1_lib_shared" />
-      <config projectName="c_plus_tm" targetName="t_stock" />
-      <config projectName="c_plus_tm" targetName="t_thread_mutex" />
-      <config projectName="c_plus_tm" targetName="t_vfork" />
-      <config projectName="c_plus_tm" targetName="gmock_main" />
-      <config projectName="c_plus_tm" targetName="c_plus_tm_lib_shared" />
-      <config projectName="c_plus_tm" targetName="t_fork" />
-      <config projectName="c_plus_tm" targetName="t_linklist" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8130997e-2ec0-4ded-8e1d-841a4dca4abb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/c_plus_tm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazel-bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazel-c_plus_tm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazel-out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazel-testlogs" afterDir="false" />
+    <list default="true" id="8130997e-2ec0-4ded-8e1d-841a4dca4abb" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/goalgrithm/alstring/string_mutiply.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/alstring/string_mutiply_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dsf/nQueen.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dynamic/get_longest_palindrome.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dynamic/longestValidParentheses.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/dynamic/longestValidParentheses_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/sort/get_leaset_numbers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/tree/serialize_tree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goalgrithm/tree/serialize_tree_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/not_repeat_child_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/not_repeat_child_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/partten_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/partten_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/rectangular_overlay.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/rectangular_overlay.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/dynamic/sum_the_sequence_arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/dynamic/sum_the_sequence_arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/greedy/cut_rope.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/greedy/cut_rope.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/bubble_sort_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/counting_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/counting_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/heap_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/heap_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/merge_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/merge_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/quick_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/selectction_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/selectction_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/sort/topk_frenkency.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/sort/topk_frenkency.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/array_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/array_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/doubly_linked_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/doubly_linked_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/hash_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/hash_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/containers/red_black_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/containers/red_black_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/trees/avl_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/trees/avl_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/trees/b_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/trees/b_tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goalgrithm/structs/trees/red_black_tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/goalgrithm/structs/trees/red_black_tree.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,169 +52,49 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1aCrz8Fpoy4abDASBfa0vE1V62Y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../extern/github.com/linux" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/process/include" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.helloWorld">
-    <configuration name="c_plus_tm1_lib_shared" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="c_plus_tm1_lib_shared" CONFIG_NAME="Debug">
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="c_plus_tm_lib_shared" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="c_plus_tm_lib_shared" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="c_plus_tm_lib_static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="c_plus_tm_lib_static" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="gmock" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="gtest" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="helloWorld" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="helloWorld" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="helloWorld">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_accabc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_accabc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_accabc">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_createThread" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_createThread" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_createThread">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_fork" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_fork" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_fork">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_linklist" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_linklist" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_linklist">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_memset" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_memset" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_memset">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_ptrstr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_ptrstr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_ptrstr">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_realloc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_realloc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_realloc">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_stock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_stock" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_stock">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_thread_detach" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_thread_detach" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_thread_detach">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_thread_mutex" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_thread_mutex" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_thread_mutex">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_thread_semaphore" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_thread_semaphore" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_thread_semaphore">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_thread_std" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_thread_std" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_thread_std">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_usedma" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_usedma" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_usedma">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_vfork" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_vfork" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_vfork">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="t_wait" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c_plus_tm" TARGET_NAME="t_wait" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="c_plus_tm" RUN_TARGET_NAME="t_wait">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.gmock" />
-      <item itemvalue="CMake Application.gmock_main" />
-      <item itemvalue="CMake Application.gtest" />
-      <item itemvalue="CMake Application.gtest_main" />
-      <item itemvalue="CMake Application.c_plus_tm_lib_shared" />
-      <item itemvalue="CMake Application.c_plus_tm_lib_static" />
-      <item itemvalue="CMake Application.c_plus_tm1_lib_shared" />
-      <item itemvalue="CMake Application.helloWorld" />
-      <item itemvalue="CMake Application.t_accabc" />
-      <item itemvalue="CMake Application.t_createThread" />
-      <item itemvalue="CMake Application.t_fork" />
-      <item itemvalue="CMake Application.t_linklist" />
-      <item itemvalue="CMake Application.t_memset" />
-      <item itemvalue="CMake Application.t_ptrstr" />
-      <item itemvalue="CMake Application.t_realloc" />
-      <item itemvalue="CMake Application.t_stock" />
-      <item itemvalue="CMake Application.t_thread_detach" />
-      <item itemvalue="CMake Application.t_thread_mutex" />
-      <item itemvalue="CMake Application.t_thread_semaphore" />
-      <item itemvalue="CMake Application.t_thread_std" />
-      <item itemvalue="CMake Application.t_usedma" />
-      <item itemvalue="CMake Application.t_vfork" />
-      <item itemvalue="CMake Application.t_wait" />
-    </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8130997e-2ec0-4ded-8e1d-841a4dca4abb" name="Default Changelist" comment="" />
@@ -224,56 +103,15 @@
       <option name="presentableId" value="Default" />
       <updated>1586250675379</updated>
       <workItem from="1586250678070" duration="7147000" />
+      <workItem from="1640970738489" duration="395000" />
+      <workItem from="1640971154202" duration="575000" />
+      <workItem from="1640971766728" duration="1713000" />
+      <workItem from="1650042070614" duration="233000" />
+      <workItem from="1657635523002" duration="1149000" />
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1398" height="285" key="GridCell.Tab.0.bottom" timestamp="1586348157432">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157432" />
-    <state width="1398" height="285" key="GridCell.Tab.0.center" timestamp="1586348157430">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157430" />
-    <state width="1398" height="285" key="GridCell.Tab.0.left" timestamp="1586348157429">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157429" />
-    <state width="1398" height="285" key="GridCell.Tab.0.right" timestamp="1586348157431">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157431" />
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1586348157435">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157435" />
-    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1586348157434">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157434" />
-    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1586348157433">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157433" />
-    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1586348157434">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586348157434" />
-    <state x="229" y="100" key="SettingsEditor" timestamp="1586270594394">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="229" y="100" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1586270594394" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/test/hello/main.c</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -6,14 +6,14 @@ package sort
     迭代版
 *****************/
 //整數或浮點數皆可使用,若要使用物件(class)時必須設定"小於"(<)的運算子功能
-func MergeSortFor(arr []int){
-	
+func MergeSortFor(arr []int) {
+
 }
 
 /**
  * 递归
-*/
-func MergeSortRecursive(src, dst []int, start, end int){
+ */
+func MergeSortRecursive(src, dst []int, start, end int) {
 	if start >= end {
 		return
 	}
@@ -30,7 +30,7 @@ func MergeSortRecursive(src, dst []int, start, end int){
 		if src[start1] < src[start2] {
 			dst[k] = src[start1]
 			start1++
-		}else{
+		} else {
 			dst[k] = src[start2]
 			start2++
 		}
@@ -51,8 +51,8 @@ func MergeSortRecursive(src, dst []int, start, end int){
 	}
 }
 
-func MergeSort(src []int) []int{
+func MergeSort(src []int) []int {
 	dst := make([]int, len(src))
-	MergeSortRecursive(src, dst,0, len(src) - 1)
+	MergeSortRecursive(src, dst, 0, len(src)-1)
 	return dst
 }

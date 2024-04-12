@@ -8,7 +8,7 @@ package sort
 3. 对左右区间重复第二步，直到各区间只有一个数
 */
 // 快速排序（递归）
-func QuickSort(src []int, low, high int){
+func QuickSort(src []int, low, high int) {
 	if low >= high {
 		return
 	}
@@ -19,7 +19,7 @@ func QuickSort(src []int, low, high int){
 	for first < last {
 		// 将比第一个小的移到前面
 		for first < last && src[last] >= key {
-			last--;
+			last--
 		}
 		if first < last {
 			src[first] = src[last]
@@ -38,7 +38,7 @@ func QuickSort(src []int, low, high int){
 	// 基准位置
 	src[first] = key
 	// 前半递归
-	QuickSort(src, low, first - 1)
+	QuickSort(src, low, first-1)
 	// 后半递归
-	QuickSort(src, first + 1, high)
+	QuickSort(src, first+1, high)
 }

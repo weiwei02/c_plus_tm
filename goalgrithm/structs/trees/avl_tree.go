@@ -1,4 +1,5 @@
 package trees
+
 import (
 	"fmt"
 	avl "github.com/emirpasic/gods/trees/avltree"
@@ -24,7 +25,6 @@ func avl_tree() {
 	//      │   ┌── 3
 	//      └── 2
 	//          └── 1
-
 
 	_ = tree.Values() // []interface {}{"a", "b", "c", "d", "e", "f"} (in order)
 	_ = tree.Keys()   // []interface {}{1, 2, 3, 4, 5, 6} (in order)
