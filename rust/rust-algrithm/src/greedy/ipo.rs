@@ -158,15 +158,3 @@ impl Solution {
         last_worth
     }
 }
-
-#[derive(Clone, PartialEq, Eq, PartialOrd, Ord, Debug)]
-struct project {
-    worth: i32,
-    profit: i32,
-}
-
-impl project {
-    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
-        self.worth.cmp(&other.worth)
-    }
-}

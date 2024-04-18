@@ -26,7 +26,6 @@ const NULL: i32 = -1;
 
 #[cfg(test)]
 mod test {
-    use super::*;
     #[test]
     fn test_max_path_sum() {
     }
