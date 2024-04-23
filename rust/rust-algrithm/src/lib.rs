@@ -9,6 +9,7 @@ mod math;
 mod queue;
 mod bits;
 mod hash;
+mod backtracking;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
