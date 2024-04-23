@@ -21,18 +21,13 @@
 
 // 进阶：你可以设计一个只用 O(1) 额外内存空间的算法解决此问题吗？
 
-use std::{collections::LinkedList, rc::Rc};
 
 #[cfg(test)]
 mod tests {
-    use super::*;
 
     #[test]
-    fn test_course_schedule() {
-        assert_eq!(
-            Solution::can_finish(4, vec![vec![0, 10], vec![3, 18], vec![5, 5]]),
-            false
-        );
+    fn test_reverse_k_group() {
+        
     }
 }
 
