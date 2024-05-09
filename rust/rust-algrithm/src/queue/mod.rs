@@ -1,1 +1,2 @@
 mod sliding_window_maximum;
+mod minimum_size_subarray_aum;
