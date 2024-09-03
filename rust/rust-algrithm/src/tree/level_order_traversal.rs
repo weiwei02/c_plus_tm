@@ -65,29 +65,29 @@ impl Solution {
     // 2. 遍历当前层数，将下一层加入到队列中
     // 3. 循环执行步骤2
     pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
-      let mut result = Vec::new();
-      let mut q = VecDeque::new();
-      if let Some(root) = root {
-          q.push_back(root);
-      }
-      while !q.is_empty() {
-          let mut temp = VecDeque::new();
-          let mut data = Vec::new();
-          while let Some(mut node) = q.pop_front() {
-              let node = Rc::into_inner(node).unwrap();
-              let mut node = RefCell::into_inner(node);
-              data.push(node.val);
-              if let Some(left) = node.left.take() {
-                  temp.push_back(left);
-              }
-              if let Some(right) = node.right.take() {
-                  temp.push_back(right);
-              }
-          }
-          result.push(data);
-          q = temp;
-      }
-      result
+        let mut result = Vec::new();
+        let mut q = VecDeque::new();
+        if let Some(root) = root {
+            q.push_back(root);
+        }
+        while !q.is_empty() {
+            let mut temp = VecDeque::new();
+            let mut data = Vec::new();
+            while let Some(mut node) = q.pop_front() {
+                let node = Rc::into_inner(node).unwrap();
+                let mut node = RefCell::into_inner(node);
+                data.push(node.val);
+                if let Some(left) = node.left.take() {
+                    temp.push_back(left);
+                }
+                if let Some(right) = node.right.take() {
+                    temp.push_back(right);
+                }
+            }
+            result.push(data);
+            q = temp;
+        }
+        result
     }
 }
 

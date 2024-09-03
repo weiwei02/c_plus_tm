@@ -1,1 +1,2 @@
 mod sigle_nums2;
+mod bitwise_and_of_numbers_range;
