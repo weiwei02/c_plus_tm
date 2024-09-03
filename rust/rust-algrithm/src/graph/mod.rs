@@ -4,3 +4,4 @@ mod spiral_matrix;
 mod number_of_island;
 mod maximal_square;
 mod valid_sudoku;
+mod rotate_image;
