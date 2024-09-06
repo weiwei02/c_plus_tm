@@ -5,3 +5,4 @@ mod number_of_island;
 mod maximal_square;
 mod valid_sudoku;
 mod rotate_image;
+mod set_matrix_zeroes;
