@@ -8,8 +8,6 @@
 // void put(int key, int value) 如果关键字 key 已经存在，则变更其数据值 value ；如果不存在，则向缓存中插入该组 key-value 。如果插入操作导致关键字数量超过 capacity ，则应该 逐出 最久未使用的关键字。
 // 函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。
 
- 
-
 // 示例：
 // 输入
 // ["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
@@ -28,7 +26,6 @@
 // lRUCache.get(1);    // 返回 -1 (未找到)
 // lRUCache.get(3);    // 返回 3
 // lRUCache.get(4);    // 返回 4
- 
 
 // 提示：
 
@@ -62,8 +59,21 @@ mod tests {
         assert_eq!(lru.get(2), -1);
         assert_eq!(lru.get(7), 7);
     }
-}
 
+    #[test]
+    fn test_lru_cache_2() {
+        let mut lru = LRUCache::new(2);
+        lru.put(1, 1);
+        lru.put(2, 2);
+        assert_eq!(lru.get(1), 1);
+        lru.put(3, 3);
+        assert_eq!(lru.get(2), -1);
+        lru.put(4, 4);
+        assert_eq!(lru.get(1), -1);
+        assert_eq!(lru.get(3), 3);
+        assert_eq!(lru.get(4), 4);
+    }
+}
 
 struct LRUCache {
     capacity: usize,
@@ -77,7 +87,7 @@ struct ListNode {
     key: i32,
     value: i32,
     prev: Option<Rc<RefCell<ListNode>>>,
-    next: Option<Rc<RefCell<ListNode>>>
+    next: Option<Rc<RefCell<ListNode>>>,
 }
 
 /**
@@ -85,7 +95,8 @@ struct ListNode {
  * let obj = LRUCache::new(capacity);
  * let ret_1: i32 = obj.get(key);
  * obj.put(key, value);
- *//**
+ */
+/**
  * Your LRUCache object will be instantiated and called as such:
  * let obj = LRUCache::new(capacity);
  * let ret_1: i32 = obj.get(key);
@@ -104,39 +115,29 @@ impl LRUCache {
             tail: None,
         }
     }
-    
+
     fn get(&mut self, key: i32) -> i32 {
         if !self.hashmap.contains_key(&key) {
             return -1;
         }
         let node = self.hashmap[&key].clone().unwrap();
-        let prev = node.borrow().prev.clone();
-        let next = node.borrow().next.clone();
-
-        if let Some(n) = prev.clone() {
-            n.borrow_mut().next = next.clone();
-        } 
-        if let Some(n) = next {
-            n.borrow_mut().prev = prev.clone();
-        }
-
-        node.borrow_mut().next = self.head.clone();
-        if let Some(n) = self.head.clone() {
-            n.borrow_mut().prev = Some(node.clone());
-        }
-        self.head = Some(node.clone());
-
-        node.clone().borrow().value.clone()
+        self.move_to_head(node.clone());
+        node.clone().borrow().value
     }
-    
+
     fn put(&mut self, key: i32, value: i32) {
+        println!("put: {}", key);
+        Self::print_link(self.head.clone());
         if self.hashmap.contains_key(&key) {
-            let node = self.hashmap.get(&key).unwrap().clone();
-            self.remove_node(node.unwrap().clone());
+            let node = self.hashmap.get(&key).clone().unwrap().clone().unwrap();
+            node.borrow_mut().value = value;
+            self.move_to_head(node.clone());
+            return;
         } else if self.hashmap.len() == self.capacity {
-            self.remove_node(self.tail.clone().unwrap());
+            self.remove_tail();
         }
 
+        Self::print_link(self.head.clone());
         // insert new node
         let new_node = Rc::new(RefCell::new(ListNode {
             key,
@@ -146,16 +147,66 @@ impl LRUCache {
         }));
 
         new_node.borrow_mut().next = self.head.clone();
+        if let Some(n) = self.head.clone() {
+            n.borrow_mut().prev = Some(new_node.clone());
+        }
         self.head = Some(new_node.clone());
+
         if self.tail.is_none() {
             self.tail = Some(new_node.clone());
         }
 
         self.hashmap.insert(key, Some(new_node));
+
+        println!("after put: {}", key);
+        Self::print_link(self.head.clone());
+    }
+
+    fn move_to_head(&mut self, node: Rc<RefCell<ListNode>>) {
+        let prev = node.borrow().prev.clone();
+        let next = node.borrow().next.clone();
+        if prev.is_none() {
+            return;
+        }
+
+        node.borrow_mut().next = self.head.clone();
+        self.head.clone().unwrap().borrow_mut().prev = Some(node.clone());
+        self.head = Some(node.clone());
+
+        prev.clone().unwrap().borrow_mut().next = next.clone();
+        if next.is_some() {
+            next.clone().unwrap().borrow_mut().prev = prev;
+        } else {
+            self.tail = prev.clone();
+        }
+    }
+
+    fn remove_tail(&mut self) {
+        if let Some(tail) = self.tail.clone() {
+            self.tail = tail.borrow().prev.clone();
+            if let Some(n) = self.tail.clone() {
+                n.borrow_mut().next = None;
+            }
+            self.hashmap.remove(&tail.borrow().key);
+        }
+    }
+
+    fn print_link(node: Option<Rc<RefCell<ListNode>>>) {
+        let mut node = node.clone();
+        let mut i = 0;
+        while let Some(n) = node {
+            println!("key: {}", n.borrow().key);
+            node = n.borrow().next.clone();
+            if i > 10 {
+                break;
+            } else {
+                i += 1;
+            }
+        }
+        println!("-----------------------");
     }
 
     fn remove_node(&mut self, node: Rc<RefCell<ListNode>>) {
-        let node = node.clone();
         let prev = node.borrow().prev.clone();
         let next = node.borrow().next.clone();
 
