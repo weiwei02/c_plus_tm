@@ -33,7 +33,7 @@ use std::collections::HashMap;
 #[derive(Default)]
 struct Trie {
     childen: HashMap<char, Trie>,
-    isEnd: bool,
+    is_end: bool,
 }
 
 /**
@@ -51,7 +51,7 @@ impl Trie {
     fn new() -> Self {
         Trie {
             childen: HashMap::new(),
-            isEnd: false,
+            is_end: false,
         }
     }
 
@@ -60,7 +60,7 @@ impl Trie {
         for c in word.chars() {
             cur = cur.childen.entry(c).or_insert_with(|| Self::new());
         }
-        cur.isEnd = true;
+        cur.is_end = true;
     }
 
     fn search(&self, word: String) -> bool {
@@ -71,7 +71,7 @@ impl Trie {
             }
             node = node.childen.get(&c).unwrap();
         }
-        return node.isEnd;
+        return node.is_end;
     }
 
     fn starts_with(&self, prefix: String) -> bool {

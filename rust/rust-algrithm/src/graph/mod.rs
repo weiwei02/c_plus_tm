@@ -6,3 +6,4 @@ mod maximal_square;
 mod valid_sudoku;
 mod rotate_image;
 mod set_matrix_zeroes;
+mod word_search_ii;
