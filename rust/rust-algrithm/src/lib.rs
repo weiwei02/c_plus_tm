@@ -11,6 +11,7 @@ mod bits;
 mod hash;
 mod backtracking;
 mod recursion;
+mod link;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
