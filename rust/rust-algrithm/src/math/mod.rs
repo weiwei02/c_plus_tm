@@ -1,3 +1,4 @@
 mod greatest_common_divisor_of_array;
 mod max_points_on_a_line;
 mod factorial_trailing_zeroes;
+mod product_of_array_except_self;
